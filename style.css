@@ -11,30 +11,32 @@ body{
     "footer";
     display: grid;
     grid-template-rows: 150px 1fr 10px;
+    background-color: #29293B;
     
 }
 header{
     grid-area: header;
-    background-color: red;
+    background-color: tomato;
     height: 150px;
 }
 main{
     grid-area: main;
     height: 1fr;
+    display: flex;
     grid-template-areas: 
     "leftside rightside";
 }
 .leftside{
     grid-area: leftside;
-    height: 1fr;
-    width: 50vh;
-   background-color: skyblue;
+    height: 100%;
+    width: 50%;
+   
 }
 .rightside{
     grid-area: rightside;
-    height: 1fr;
-    width: 50vh;
-   background-color: tomato;
+    height: 100%;
+    width: 50%;
+   
 }
 footer{
     grid-area: footer;
