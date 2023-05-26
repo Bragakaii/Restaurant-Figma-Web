@@ -19,6 +19,16 @@ header{
     background-color: tomato;
     height: 150px;
 }
+.orangeball{
+    position: absolute;
+    width: 874px;
+    height: 878px;
+    left: 856px;
+    top: -260px;
+    background: #FE8A00;
+    border-radius: 50%;
+    transform: translateX(50%);
+}
 main{
     grid-area: main;
     height: 1fr;
@@ -30,7 +40,30 @@ main{
     grid-area: leftside;
     height: 100%;
     width: 50%;
+    display: flex;
+    gap: 24px;
    
+}
+.orangebottom{
+    background-color: #FE8A00;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    text-align: center;
+    transform: translateY(750%);
+    
+}
+.greenbottom{
+    background-color: #3FA730;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    text-align: center;
+    transform: translateY(750%);
 }
 .rightside{
     grid-area: rightside;
