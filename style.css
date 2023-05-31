@@ -212,9 +212,9 @@ main{
     align-items: center;
    
 }
-.macarrao{
-    width: 900px;
-    height: 900px;
+.macarrao[alt~=talk]{
+    width: 600px;
+    height: 600px;
 }
 
 footer{
