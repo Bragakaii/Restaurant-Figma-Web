@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 body{
+    background-size: cover;
+    overflow: hidden;
     height: 100vh;
     grid-template-areas: 
     "header"
@@ -18,6 +20,9 @@ header{
     grid-area: header;
     background-color: tomato;
     height: 150px;
+}
+nav{
+    display: flex;
 }
 .orangeball{
     position: absolute;
@@ -47,6 +52,8 @@ main{
    
 }
 .upbottom{
+    position: relative;
+
    background-color: #FE8A00;
    border-radius: 40px;
    color: white;
@@ -60,14 +67,20 @@ main{
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
+    padding: 8px;
+    place-self: center;
 }
 .title{
     color: white;
     font-size: 64px;
-    height: 150px;
+    width: 250px;
+    height: 180px;
     font-family: 'Inter', sans-serif;
+    font-weight: bold;
 }
 .text{
+    width: 470px;
+    height: 150px;
     font-family: 'Inter';
     color: white;
     font-weight: 300;
@@ -78,7 +91,7 @@ main{
 .bottoms{
     display: flex;
     gap: 32px;
-    place-items: center;
+    place-items: end;
 }
 .orangebottom{
     background-color: #FE8A00;
@@ -88,7 +101,6 @@ main{
     height: 60px;
     border-radius: 40px;
     text-align: center;
-    transform: translateY(600%);
     
 }
 .orgbottom__text{
@@ -97,6 +109,8 @@ main{
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
+    padding: 16px;
+    place-self: center;
 }
 .greenbottom{
     background-color: #3FA730;
@@ -106,7 +120,6 @@ main{
     height: 60px;
     border-radius: 40px;
     text-align: center;
-    transform: translateY(600%);
 }
 .grnbottom__text{
     font-family: 'Inter', sans-serif;
@@ -114,15 +127,24 @@ main{
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
+    padding: 16px;
+    place-self: center;
 }
 .rightside{
     grid-area: rightside;
     height: 100%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
+}
+.macarrao{
+    
 }
 footer{
     grid-area: footer;
     background-color: royalblue;
     height: 10px;
 }
+
